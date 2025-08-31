@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment - Week 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 JavaScript Fundamentals Assignment</h1>
+            <p>Week 5: Mastering Variables, Functions, Loops & DOM Manipulation</p>
+        </div>
+
+        <!-- Part 1: JavaScript Basics -->
+        <div class="part">
+            <h2>🎯 Part 1: JavaScript Basics</h2>
+            <p>Variables, data types, operators, and conditionals in action!</p>
+            
+            <h3>Age Calculator & Conditional Logic</h3>
+            <div class="input-group">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="userAge">Your Age:</label>
+                <input type="number" id="userAge" placeholder="Enter your age">
+                <button class="btn" onclick="checkAge()">Check Age Category</button>
+            </div>
+            <div id="ageResult" class="result"></div>
+
+            <h3>Temperature Converter</h3>
+            <div class="input-group">
+                <label for="celsius">Celsius:</label>
+                <input type="number" id="celsius" placeholder="Enter temperature">
+                <button class="btn" onclick="convertTemperature()">Convert to Fahrenheit</button>
+            </div>
+            <div id="tempResult" class="result"></div>
+        </div>
+
+        <!-- Part 2: JavaScript Functions -->
+        <div class="part">
+            <h2>❤️ Part 2: JavaScript Functions</h2>
+            <p>Reusable blocks of logic that make code cleaner and smarter!</p>
+            
+            <h3>Function 1: Calculate Total with Tax</h3>
+            <div class="input-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" placeholder="Enter price" step="0.01">
+                <label for="taxRate">Tax Rate (%):</label>
+                <input type="number" id="taxRate" placeholder="Tax %" step="0.1" value="8.5">
+                <button class="btn" onclick="calculateTotal()">Calculate Total</button>
+            </div>
+            <div id="totalResult" class="result"></div>
+
+            <h3>Function 2: String Formatter</h3>
+            <div class="input-group">
+                <label for="inputText">Text:</label>
+                <input type="text" id="inputText" placeholder="Enter some text">
+                <button class="btn" onclick="formatString()">Format Text</button>
+            </div>
+            <div id="stringResult" class="result"></div>
+        </div>
+
+        <!-- Part 3: JavaScript Loops -->
+        <div class="part">
+            <h2>🔁 Part 3: JavaScript Loops</h2>
+            <p>Embrace the power of repetition with different loop types!</p>
+            
+            <div class="loop-demo">
+                <div class="loop-card">
+                    <h3>For Loop: Multiplication Table</h3>
+                    <div class="input-group">
+                        <input type="number" id="multiplyNum" placeholder="Number" value="5">
+                        <button class="btn" onclick="showMultiplicationTable()">Generate</button>
+                    </div>
+                    <div id="multiplyResult" class="loop-output"></div>
+                </div>
+
+                <div class="loop-card">
+                    <h3>While Loop: Countdown Timer</h3>
+                    <div class="input-group">
+                        <input type="number" id="countdownStart" placeholder="Start from" value="10">
+                        <button class="btn" onclick="startCountdown()">Start Countdown</button>
+                    </div>
+                    <div id="countdownResult" class="loop-output"></div>
+                </div>
+
+                <div class="loop-card">
+                    <h3>ForEach Loop: Array Processing</h3>
+                    <button class="btn" onclick="processArray()">Process Fruits Array</button>
+                    <div id="arrayResult" class="loop-output"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 4: DOM Manipulation -->
+        <div class="part">
+            <h2>🌐 Part 4: DOM Manipulation</h2>
+            <p>Bring your page to life with interactive JavaScript!</p>
+            
+            <h3>DOM Interaction 1: Toggle Content Visibility</h3>
+            <button class="btn" onclick="toggleContent()">Toggle Hidden Content</button>
+            <div id="toggleContent" class="toggle-content hidden">
+                <h4>🎉 Surprise! You found the hidden content!</h4>
+                <p>This content was hidden and revealed using DOM manipulation with JavaScript.</p>
+            </div>
+
+            <h3>DOM Interaction 2: Dynamic List Creation</h3>
+            <div class="input-group">
+                <input type="text" id="listItem" placeholder="Enter list item">
+                <button class="btn" onclick="addListItem()">Add Item</button>
+                <button class="btn" onclick="clearList()">Clear List</button>
+            </div>
+            <ul id="dynamicList" class="dynamic-list"></ul>
+
+            <h3>DOM Interaction 3: Interactive Counter</h3>
+            <div class="counter-display" id="counter">0</div>
+            <div class="controls">
+                <button class="btn" onclick="incrementCounter()">+1</button>
+                <button class="btn" onclick="decrementCounter()">-1</button>
+                <button class="btn" onclick="resetCounter()">Reset</button>
+                <button class="btn" onclick="randomCounter()">Random</button>
+            </div>
+
+            <h3>DOM Interaction 4: Style Changer</h3>
+            <button class="btn" onclick="changeBackgroundColor()">Change Page Theme</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
